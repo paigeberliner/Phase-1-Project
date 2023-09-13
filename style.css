@@ -1,17 +1,20 @@
 body {
-    background: #f5e2de;
+    background:white;
   }
 
 .page-header { 
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #5C4033; 
 }
 
-.select-a-brownie-form {
+.select-a-cookie-form {
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #5C4033;
 }
-.select {
+.select-cookie {
+    width: 250px;
+    height: 25px;
+}
+
+.add-ranking {
     width: 250px;
     height: 25px;
 }
@@ -31,7 +34,6 @@ body {
     width: 100px;
 }
 
-.brownie-container { 
+.cookie-container { 
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #5C4033;
 }
