@@ -1,3 +1,37 @@
 body {
-    background: pink;
+    background: #f5e2de;
   }
+
+.page-header { 
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #5C4033; 
+}
+
+.select-a-brownie-form {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #5C4033;
+}
+.select {
+    width: 250px;
+    height: 25px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.submit-btn { 
+    color: white;
+    font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding: 0;
+    border: none;
+    background: #f16460;
+    height: 30px;
+    width: 100px;
+}
+
+.brownie-container { 
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #5C4033;
+}
