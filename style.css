@@ -6,11 +6,11 @@ body {
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-.select-a-cookie-form {
+.select-cookie {
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
-.select-cookie {
-    width: 250px;
+.dropdown {
+    width: 258px;
     height: 25px;
 }
 
@@ -20,20 +20,35 @@ body {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 175px;
+    height: 150px;
 }
 
 .submit-btn { 
-    color: white;
+    color: black;
     font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     padding: 0;
     border: none;
-    background: #f16460;
+    background: #f8deed;
     height: 30px;
     width: 100px;
 }
 
 .cookie-container { 
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    border: 5px solid #f8deed;
+    border-radius: 10px;
+    padding: 10px;
 }
+
+.remove-cookie {
+    color: black;
+    font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    padding: 0px;
+    border: none;
+    background: #f8deed;
+    height: 30px;
+    width: 100px;
+    margin-top: 5px;
+}
+

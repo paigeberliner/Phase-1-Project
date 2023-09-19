@@ -6,28 +6,26 @@
   </head>
 
   <body>
-    <img class = "logo" src = https://static.vecteezy.com/system/resources/previews/018/931/604/original/cartoon-cookie-icon-png.png>
-    
-    <h1 class = "page-header"> Rank Your Favorite NYC Cookie Spots </h1>
-    <form class ="select-a-cookie-form" >
-        <h3> Select the Cookie Spot </h3>
+    <img class = "logo" src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sEoTt-cXUw7Mn6oLtzAfO_bdSC0BMVpxrf2yMBBKHKUMlPTvvA6tABMvsOJEexr78MI&usqp=CAU>
+    <h1 class = "page-header"> Select and Rank Your Favorite Crumbl Cookie Flavors! </h1>
+    <form id = "form">
+      <p>
+      <select id="dropdown" name="dropdown" class = "dropdown"> </select>
+      </p>
+      <p>
         <input
-        type = "text"
-        placeholder = "Select a Cookie Spot from the Dropdown"
-        class = "select-cookie"
-        />
-        <br />
-        <h3> Add Your Ranking </h3>
-        <input
-        type = "text"
+        name = "ranking"
+        type = "number"
+        step = ".5"
         placeholder = "Enter your Ranking"
         class = "add-ranking"
-    </form>
+      >
+    </p>
     <p>
     <button id = "submit-btn" class = "submit-btn"> Submit </button>
     </p>
-    <div class = "cookie-container">
-      <h4> Your Cookie Rankings </h4>
+    <div class = "cookie-container" id = "cookie-container">
+      <h4> Your Crumbl Rankings </h4>
     </div>
     <script src="script.js"></script>
   </body>
