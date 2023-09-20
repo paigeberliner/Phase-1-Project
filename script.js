@@ -20,12 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function postCookies(event){
+function renderCookies(event){
     event.preventDefault()
     const selectedFlavor = event.target[0].value;
-//    fetch('http://localhost:3000/CookieFlavors')
-//         .then(res => res.json())
-//         .then(data => {
     const selectedCookie = cookieFlavors.find(cookie => cookie.name === selectedFlavor);
     if (selectedCookie) {
         let card = document.createElement('div');
@@ -46,13 +43,11 @@ function postCookies(event){
         cookieImage.addEventListener('mouseover', showDescription)
 
     }
-        // })
-        // .catch(error => console.error('Error fetching data:', error));
 
 }
 
 let form = document.querySelector("#form")
-form.addEventListener('submit', postCookies)
+form.addEventListener('submit', renderCookies)
 
 function removeCookie(e){
     e.target.parentNode.remove()
