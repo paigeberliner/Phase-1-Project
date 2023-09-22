@@ -9,10 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(res => res.json())
         .then(data => {
             cookieFlavors = data;
-            cookieFlavors.forEach(item => {
+            cookieFlavors.forEach(cookie => {
                 const option = document.createElement('option');
-                option.value = item.name;
-                option.text = item.name;
+                option.text = cookie.name;
                 dropdown.appendChild(option);
             });
         })
@@ -24,14 +23,13 @@ function renderCookies(event){
     event.preventDefault()
     const selectedFlavor = event.target[0].value;
     const selectedCookie = cookieFlavors.find(cookie => cookie.name === selectedFlavor);
-    if (selectedCookie) {
-        let card = document.createElement('div');
-        card.innerHTML = `
-            <div>
-                <h2>${selectedCookie.name}</h2>
-                <h3> Score: ${event.target.ranking.value}</h3>
-                <img src="${selectedCookie.image}" class="cookie-image" id="${selectedCookie.id}"/>
-            </div>
+    let card = document.createElement('div');
+    card.innerHTML = `
+        <div>
+            <h2>${selectedCookie.name}</h2>
+             <h3> Score: ${event.target.ranking.value}</h3>
+            <img src="${selectedCookie.image}" class="cookie-image" id="${selectedCookie.id}"/>
+        </div>
         `;
         document.querySelector('#cookie-container').appendChild(card);
         let btn = document.createElement('button');
@@ -39,21 +37,17 @@ function renderCookies(event){
         btn.textContent = 'Delete'
         btn.classList = "remove-cookie"
         card.appendChild(btn);
-        const cookieImage = card.querySelector('.cookie-image')
-        cookieImage.addEventListener('mouseover', showDescription)
-
-    }
+    const cookieImage = card.querySelector('.cookie-image')
+    cookieImage.addEventListener('mouseover', showDescription)
 
 }
 
 let form = document.querySelector("#form")
 form.addEventListener('submit', renderCookies)
 
-function removeCookie(e){
-    e.target.parentNode.remove()
+function removeCookie(event){
+    event.target.parentNode.remove()
 }
-
-
 
 function showDescription(event){
     alert(cookieFlavors.find(f => event.target.id == f.id).description)
